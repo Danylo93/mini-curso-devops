@@ -1,11 +1,4 @@
 terraform {
-backend "s3" {
-    bucket         = var.remote_backend.bucket_name
-    key            = "terraform.tfstate"
-    region         = var.assume_role.region
-    dynamodb_table = var.remote_backend.dynamo_table_name
-  }
-
   required_providers {
     aws = {
       source  = "hashicorp/aws"

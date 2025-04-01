@@ -30,7 +30,7 @@ variable "remote_backend" {
   })
 
   default = {
-    bucket_name    = "devops-na-nuvem-terraform-remote-backend-course"
+    bucket_name    = "devops-na-nuvem-terraform-remote-backend-course1"
     dynamo_table_name = "devops-na-nuvem-terraform-remote-backend-course"
     dynamo_table_billing_mode = "PAY_PER_REQUEST"
     dynamo_table_hash_key_attribute_name = "LockID"
